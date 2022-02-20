@@ -8,6 +8,8 @@ html {
   body {
     margin-bottom: 30px; /* Margin bottom by footer height */
   }
+
+
   .footer {
 
     position: absolute;
@@ -58,7 +60,10 @@ html {
   .spacer {
     flex: 1;
   }
-
+.navbar{
+  color: white;
+  font-weight: 600;
+}
   .toolbar {
     position: absolute;
     top: 0;
