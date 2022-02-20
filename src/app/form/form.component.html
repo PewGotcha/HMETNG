@@ -1,0 +1,122 @@
+
+   <div class="content" role="main">
+
+ <h1> Signup Form</h1>
+    <br>
+  
+  
+    <form #userForm="ngForm">
+  
+      <div class="container">
+        <div class="row">
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="forename" class="form-label">Forename</label>
+              <input type="text" class="form-control" id="forename" ngModel name="forename">
+            </div>
+  
+          </div>
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="surname" class="form-label">Surname</label>
+              <input type="text" class="form-control" id="surname" name="surname" ngModel> 
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp" ngModel name="email">
+            </div>
+  
+          </div>
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="text" class="form-control" id="phone" ngModel name="phone">
+            </div>
+  
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="addr1" class="form-label">Address Line 1</label>
+              <input type="text" class="form-control" id="addr1" ngModel name="addr1">
+            </div>
+            <div class="mb-3">
+              <label for="addr2" class="form-label">Address Line 2</label>
+              <input type="text" class="form-control" id="addr2" ngModel name="addr2">
+            </div>
+            <div class="mb-3">
+              <label for="addr3" class="form-label">Address Line 3</label>
+              <input type="text" class="form-control" id="addr3" ngModel name="addr3">
+            </div>
+          </div>
+          <div class="col"></div>
+        </div>
+  
+  
+        <div class="row">
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="city" class="form-label">City/Town</label>
+              <input type="text" class="form-control" id="city" ngModel name="city">
+            </div>
+  
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="county" class="form-label">County/State</label>
+              <input type="text" class="form-control" id="county" ngModel name="county">
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+  
+            <div class="mb-3">
+              <label for="postcode" class="form-label">Postcode/Zipcode</label>
+              <input type="text" class="form-control" id="postcode" ngModel name="postcode">
+            </div>
+  
+          </div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="country" class="form-label">Country</label>
+              <input type="text" class="form-control" id="country" ngModel name="country">
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col">
+        <div class="mb-3 form-check">
+          <strong>Talky stuff about GDPR</strong>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nisl scelerisque, tristique massa vel, ultrices orci. Phasellus sagittis nibh non quam bibendum dictum. Aliquam mi ligula, lacinia in porta accumsan, ullamcorper nec tortor. </p>
+          <br>
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" ngModel name="contact">
+         
+          <label class="form-check-label" for="exampleCheck1">I am happy to be contacted</label>
+        </div>
+        </div>
+        <div class="col"></div>
+      </div>
+       
+      </div>
+    </form>
+  
+    <button (click)="method(userForm.value)" class="btn btn-primary">Submit</button>
+  
+  </div>

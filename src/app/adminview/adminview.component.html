@@ -1,0 +1,42 @@
+
+<div class="content" role="main">
+
+
+<h1>View</h1><button (click)="getData()" class="btn btn-primary">Refresh</button>
+<div align="center">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ForeName</th>
+        <th scope="col">Surname</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">AddressLine1</th>
+        <th scope="col">AddressLine2</th>
+        <th scope="col">AddressLine3</th>
+        <th scope="col">City/Town</th>
+        <th scope="col">County/State</th>
+        <th scope="col">Post/Zip</th>
+        <th scope="col">Country</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr  *ngFor="let one of bits">
+        <td>{{one.Forname.S}}</td>
+        <td>{{one.Surname.S}}</td>
+        <td>{{one.Email.S}}</td>
+        <td>{{one.Phone.S}}</td>
+        <td>{{one.Addr1.S}}</td>
+        <td>{{one.Addr2.S}}</td>
+        <td>{{one.Addr3.S}}</td>
+        <td>{{one.City.S}}</td>
+        <td>{{one.County.S}}</td>
+        <td>{{one.Postcode.S}}</td>
+        <td>{{one.Country.S}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+</div>

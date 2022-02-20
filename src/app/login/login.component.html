@@ -1,0 +1,41 @@
+<div class="login" role="main">
+
+<div class="loginbox">
+
+    <h1>Login</h1>
+
+ <form #loginForm="ngForm" (NgSubmit)="loginUser($event)">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="username" ngModel name="username">
+                    </div>
+
+                </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" ngModel name="password">
+                        </div>
+
+                    </div>
+
+                </div>
+            
+        </div>
+    </form>
+
+    <button (click)="login(loginForm.value)" class="btn btn-primary">Submit</button>
+
+
+</div>
+
+</div>

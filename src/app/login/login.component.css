@@ -1,0 +1,17 @@
+
+.loginbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.login {
+
+  margin: 82px auto 32px 10px;
+  padding: 0 10px;
+
+
+  align-items: left;
+
+}
