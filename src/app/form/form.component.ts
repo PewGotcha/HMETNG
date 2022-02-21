@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { ValueConverter } from '@angular/compiler/src/render3/view/template';
 
 @Component({
   selector: 'app-form',
@@ -11,14 +12,14 @@ export class FormComponent implements OnInit {
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    
   }
 
 
   method(value: any){
 
 
-  
-    var jsonBody = '{"TableName": "Members","Item": {"Forname": {"S": "'+value.forename+'"},"Surname": {"S": "'+value.surname+'"},"Email": {"S": "'+value.email+'"},"Phone": {"S": "'+value.phone+'"},"Addr1": {"S": "'+value.addr1+'"},"Addr2": {"S": "'+value.addr2+'"},"Addr3": {"S": "'+value.addr3+'"},"City": {"S": "'+value.city+'"},"County": {"S": "'+value.county+'"},"Postcode": {"S": "'+value.postcode+'"},"Country": {"S": "'+value.country+'"}}}'
+   var jsonBody = '{"TableName": "Members","Item": {"Forname": {"S": "'+value.forename+'"},"Surname": {"S": "'+value.surname+'"},"Email": {"S": "'+value.email+'"},"Phone": {"S": "'+value.phone+'"},"Addr1": {"S": "'+value.addr1+'"},"Addr2": {"S": "'+value.addr2+'"},"Addr3": {"S": "'+value.addr3+'"},"City": {"S": "'+value.city+'"},"County": {"S": "'+value.county+'"},"Postcode": {"S": "'+value.postcode+'"},"Country": {"S": "'+value.country+'"},"Contact": {"S": "'+value.contact+'"}}}'
     
     console.log(jsonBody);
 
@@ -32,8 +33,8 @@ export class FormComponent implements OnInit {
     });
 
     alert("Submitted!");
-    window.location.href = 'http://www.hmetng.org.uk/';
-  }
+    window.location.href = '/';
+    }
 
 
 }

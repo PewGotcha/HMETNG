@@ -105,10 +105,14 @@
         <div class="mb-3 form-check">
           <strong>Talky stuff about GDPR</strong>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nisl scelerisque, tristique massa vel, ultrices orci. Phasellus sagittis nibh non quam bibendum dictum. Aliquam mi ligula, lacinia in porta accumsan, ullamcorper nec tortor. </p>
-          <br>
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" ngModel name="contact">
-         
-          <label class="form-check-label" for="exampleCheck1">I am happy to be contacted</label>
+
+<p>I am happy to be contacted</p>
+          <input type="radio" id="radioYes" name="contact" ngModel value="Yes">
+          <label for="Yes">Yes</label><br>
+          <input type="radio" id="radioNo" name="contact" ngModel value="No">
+          <label for="No">No</label>
+
+
         </div>
         </div>
         <div class="col"></div>
